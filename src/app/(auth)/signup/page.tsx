@@ -16,7 +16,7 @@ export default function SignUp() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto mt-10 p-6">
+    <form onSubmit={handleSubmit} className="max-w-xl mx-auto mt-10 p-6">
       <h2 className="text-4xl mb-12 font-semibold text-[var(--text-brand)] text-center">
         Create A New Account
       </h2>

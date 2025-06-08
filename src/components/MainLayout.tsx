@@ -64,7 +64,7 @@ export default function MainLayout({
             <ul className="space-y-2 mt-2">
               <li className="font-semibold">Generator</li>
               <li>
-                <a href="#">
+                <a href="/roadmaps">
                   <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
                     <span className="material-icons-outlined absolute left-4">
                       map
@@ -74,7 +74,7 @@ export default function MainLayout({
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/quiz">
                   <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

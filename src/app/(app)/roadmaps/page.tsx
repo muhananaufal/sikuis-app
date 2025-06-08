@@ -13,7 +13,7 @@ export default function GenerateRoadmaps() {
 
   return (
     <MainLayout>
-      <form onSubmit={handleSubmit} className="max-w-md mx-auto mt-10 p-6">
+      <form onSubmit={handleSubmit} className="max-w-xl mx-auto mt-10 p-6">
         <h2 className="text-3xl font-semibold text-[var(--text-brand)] text-center">
           Generate Roadmaps with AI
         </h2>
@@ -28,7 +28,7 @@ export default function GenerateRoadmaps() {
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
           required
-          className="w-full border-2 border-[var(--text-secondary)] px-4 py-4 text-[var(--text-primary)] focus:outline-none rounded-xl placeholder:text-center text-center"
+          className="w-full border-2 border-[var(--text-secondary)] px-4 py-4 text-[var(--text-primary)] focus:outline-none rounded-xl text-center"
         />
 
         {/* GENERATE BUTTON */}
