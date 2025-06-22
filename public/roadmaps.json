@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Root 1",
+    "description": "Simple description",
+    "children": [
+      {
+        "title": "Child 1",
+        "description": "Simple description",
+        "children": [
+          {
+            "title": "Child 1.1",
+            "description": "Simple description",
+            "children": []
+          },
+          {
+            "title": "Child 1.2",
+            "description": "Simple description",
+            "children": []
+          },
+          {
+            "title": "Child 1.2",
+            "description": "Simple description",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "Child 2",
+        "description": "Simple description",
+        "children": [
+          {
+            "title": "Child 2.1",
+            "description": "Simple description",
+            "children": []
+          },
+          {
+            "title": "Child 2.2",
+            "description": "Simple description",
+            "children": []
+          },
+          {
+            "title": "Child 2.2",
+            "description": "Simple description",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Root 2",
+    "children": [
+      {
+        "title": "Child 1",
+        "children": [
+          {
+            "title": "Child 1.1",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]
