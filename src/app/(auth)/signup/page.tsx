@@ -2,28 +2,46 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { signup } from "../actions";
 
 export default function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log(`Login with:`, { email, password });
-    // Here you'd call your API
-  };
+  const [error, setError] = useState("");
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-xl mx-auto mt-10 p-6">
+    <form className="max-w-xl mx-auto mt-10 p-6">
       <h2 className="text-4xl mb-12 font-semibold text-[var(--text-brand)] text-center">
         Create A New Account
       </h2>
 
+      {/* Alerts */}
+      {error && (
+        <div
+          className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-5"
+          role="alert"
+        >
+          <span className="block sm:inline">{error}</span>
+          <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
+            <svg
+              className="fill-current h-6 w-6 text-red-500"
+              role="button"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <title>Close</title>
+              <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
+            </svg>
+          </span>
+        </div>
+      )}
+
       {/* FORM INPUT */}
       <input
         type="email"
+        name="email"
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
@@ -33,6 +51,7 @@ export default function SignUp() {
       <div className="relative">
         <input
           type={showPassword ? "text" : "password"}
+          name="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
@@ -75,13 +94,13 @@ export default function SignUp() {
 
       {/* SIGN IN/SIGN UP BUTTON */}
       <button
-        type="submit"
+        formAction={signup}
         className="w-full bg-[var(--text-brand)] text-[var(--text-white)] mt-6 p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer"
       >
-        SIGN IN
+        SIGN UP
       </button>
       <div className="mt-6 text-[var(--text-brand)] font-semibold text-center">
-        <a href="/signin">DON&apos;T HAVE ACCOUNT?</a>
+        <a href="/signin">ALREADY HAVE AN ACCOUNT?</a>
       </div>
 
       <div className="mt-4 text-[var(--text-secondary)] font-semibold text-center">
@@ -100,7 +119,7 @@ export default function SignUp() {
           height={24}
           className="absolute left-5 object-contain"
         />
-        Sign In with Google
+        Sign Up with Google
       </button>
 
       <div className="mt-4 p-4 text-[var(--text-secondary)] font-regular text-center">

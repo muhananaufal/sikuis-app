@@ -141,6 +141,19 @@ export default function MainLayout({
                   </button>
                 </a>
               </li>
+              <li>
+                <form method="POST" action="/api/auth/signout">
+                  <button
+                    type="submit"
+                    className="relative w-full border-2 bg-[var(--text-brand)] text-[var(--text-white)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center"
+                  >
+                    <span className="material-icons-outlined absolute left-4">
+                      logout
+                    </span>
+                    Sign Out
+                  </button>
+                </form>
+              </li>
             </ul>
           </nav>
         </aside>
