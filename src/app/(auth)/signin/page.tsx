@@ -12,7 +12,7 @@ export default function SignIn() {
 
   return (
     <form className="max-w-xl mx-auto mt-10 p-6">
-      <h2 className="text-4xl mb-12 font-semibold text-[var(--text-brand)] text-center">
+      <h2 className="text-4xl mb-12 font-semibold text-brand text-center">
         Sign In
       </h2>
 
@@ -46,7 +46,7 @@ export default function SignIn() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        className="w-full border-3 border-[var(--text-secondary)] px-4 py-4 text-[var(--text-primary)] focus:outline-none rounded-t-xl"
+        className="w-full border-3 border-text-secondary px-4 py-4 text-text-primary focus:outline-none rounded-t-xl"
       />
       <div className="relative">
         <input
@@ -56,44 +56,44 @@ export default function SignIn() {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full border-3 border-[var(--text-secondary)] px-4 py-4 text-[var(--text-primary)] focus:outline-none rounded-b-xl border-t-0 -mt-px"
+          className="w-full border-3 border-text-secondary px-4 py-4 text-text-primary focus:outline-none rounded-b-xl border-t-0 -mt-px"
         />
         <button
           type="button"
           onClick={() => setShowPassword((prev) => !prev)}
-          className="absolute right-4 top-1/2 -translate-y-1/2 text[var(--text-secondary)]"
+          className="absolute right-4 top-1/2 -translate-y-1/2 texttext-secondary"
         >
           <span
-            className="material-icons-outlined text-[var(--text-brand)]"
+            className="material-icons-outlined text-color-brand"
             style={{ fontSize: "1.8rem" }}
           >
             {showPassword ? "visibility_off" : "visibility"}
           </span>
         </button>
       </div>
-      <div className="mt-6 text-[var(--text-brand)] font-semibold">
+      <div className="mt-6 text-color-brand font-semibold">
         <a href="">FORGOT PASSWORD</a>
       </div>
 
       {/* SIGN IN/SIGN UP BUTTON */}
       <button
         formAction={login}
-        className="w-full bg-[var(--text-brand)] text-[var(--text-white)] mt-6 p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer"
+        className="w-full bg-color-brand text-text-negative mt-6 p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer"
       >
         SIGN IN
       </button>
-      <div className="mt-6 text-[var(--text-brand)] font-semibold text-center">
+      <div className="mt-6 text-color-brand font-semibold text-center">
         <a href="/signup">DON&apos;T HAVE ACCOUNT?</a>
       </div>
 
-      <div className="mt-4 text-[var(--text-secondary)] font-semibold text-center">
+      <div className="mt-4 text-text-secondary font-semibold text-center">
         OR
       </div>
 
       {/* OTHER SIGN IN/SIGN UP METHOD */}
       <button
         type="submit"
-        className="relative w-full bg-transparent border-3 text-[var(--text-brand)] mt-6 p-4 font-semibold rounded-xl hover:bg-[var(--text-brand)] hover:text-[var(--text-white)] transition cursor-pointer flex justify-center items-center"
+        className="relative w-full bg-transparent border-3 text-color-brand mt-6 p-4 font-semibold rounded-xl hover:bg-color-brand hover:text-text-negative transition cursor-pointer flex justify-center items-center"
       >
         <Image
           src="/google.svg"
@@ -105,7 +105,7 @@ export default function SignIn() {
         Sign In with Google
       </button>
 
-      <div className="mt-4 p-4 text-[var(--text-secondary)] font-regular text-center">
+      <div className="mt-4 p-4 text-text-secondary font-regular text-center">
         By signing up to SiKuis, you agree to our{" "}
         <a href="">
           <b>Terms</b>

@@ -14,7 +14,7 @@ export default function UserRoadmaps() {
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}
-            className="w-full border-2 border-[var(--text-secondary)] text-[var(--text-secondary)] font-semibold rounded-xl p-3 flex items-center justify-center space-x-2 hover:bg-gray-100 transition"
+            className="w-full border-2 border-text-secondary text-text-secondary font-semibold rounded-xl p-3 flex items-center justify-center space-x-2 hover:bg-gray-100 transition"
           >
             <span
               className={`material-icons-outlined text-lg transition-transform ${
@@ -29,12 +29,12 @@ export default function UserRoadmaps() {
 
           {/* Dropdown Menu */}
           {isOpen && (
-            <div className="absolute top-full left-0 mt-2 w-full bg-white border-2 border-[var(--text-secondary)] rounded-xl shadow-lg z-10">
+            <div className="absolute top-full left-0 mt-2 w-full bg-white border-2 border-text-secondary rounded-xl shadow-lg z-10">
               <ul className="divide-y divide-gray-200">
                 {["Roadmaps", "Summary & Quiz", "Quiz"].map((option, index) => (
                   <li
                     key={index}
-                    className="p-3 cursor-pointer hover:bg-gray-100 text-[var(--text-secondary)] text-center"
+                    className="p-3 cursor-pointer hover:bg-gray-100 text-text-secondary text-center"
                     onClick={() => {
                       console.log(`Selected: ${option}`);
                       setIsOpen(false); // close menu on select
@@ -64,7 +64,7 @@ export default function UserRoadmaps() {
           </li>
           <li>
             <a href="#">
-              <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex">
+              <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -79,16 +79,16 @@ export default function UserRoadmaps() {
                 </div>
                 <div className="w-full ml-4 text-left">
                   <h2>Piano Mastery Quiz #1</h2>
-                  <p className="text-[var(--text-secondary)] font-normal">
+                  <p className="text-text-secondary font-normal">
                     3 Question • Easy
                   </p>
-                  <p className="text-[var(--text-secondary)] font-normal">
+                  <p className="text-text-secondary font-normal">
                     Multiple Choices, Yes-No, Open Question
                   </p>
                 </div>
 
                 {/* Top-right kebab menu */}
-                <div className="text-[var(--text-brand)] text-2xl leading-none">
+                <div className="text-color-brand text-2xl leading-none">
                   <span className="material-icons">more_vert</span>
                 </div>
               </button>
@@ -110,7 +110,7 @@ export default function UserRoadmaps() {
           </li>
           <li>
             <a href="#">
-              <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex">
+              <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -125,16 +125,16 @@ export default function UserRoadmaps() {
                 </div>
                 <div className="w-full ml-4 text-left">
                   <h2>Piano Mastery Quiz #1</h2>
-                  <p className="text-[var(--text-secondary)] font-normal">
+                  <p className="text-text-secondary font-normal">
                     3 Question • Easy
                   </p>
-                  <p className="text-[var(--text-secondary)] font-normal">
+                  <p className="text-text-secondary font-normal">
                     Multiple Choices, Yes-No, Open Question
                   </p>
                 </div>
 
                 {/* Top-right kebab menu */}
-                <div className="text-[var(--text-brand)] text-2xl leading-none">
+                <div className="text-color-brand text-2xl leading-none">
                   <span className="material-icons">more_vert</span>
                 </div>
               </button>

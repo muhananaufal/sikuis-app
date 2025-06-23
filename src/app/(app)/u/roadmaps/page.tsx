@@ -11,7 +11,7 @@ export default function UserRoadmaps() {
       <div className="max-w-xl mx-auto p-6">
         <button
           onClick={() => router.back()}
-          className="flex items-center pb-10 text-[var(--text-primary)] cursor-pointer"
+          className="flex items-center pb-10 text-text-primary cursor-pointer"
         >
           <span
             className="material-icons-outlined m-0 mr-4"
@@ -22,17 +22,15 @@ export default function UserRoadmaps() {
           <span className="font-semibold">Back</span>
         </button>
 
-        <h2 className="text-3xl font-semibold text-[var(--text-primary)]">
+        <h2 className="text-3xl font-semibold text-text-primary">
           Piano Mastery
         </h2>
-        <div className="py-4 text-[var(--text-secondary)] font-regular">
-          Description
-        </div>
+        <div className="py-4 text-text-secondary font-regular">Description</div>
 
         <div className="flex gap-2">
           <button
             type="submit"
-            className="bg-[var(--text-brand2)] text-[var(--text-white)] px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
+            className="bg-color-brand2 text-text-negative px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
           >
             <span
               className="material-icons-outlined m-0 mr-2"
@@ -44,7 +42,7 @@ export default function UserRoadmaps() {
           </button>
           <button
             type="submit"
-            className="bg-[var(--text-brand2)] text-[var(--text-white)] px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
+            className="bg-color-brand2 text-text-negative px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
           >
             <span
               className="material-icons-outlined m-0 mr-2"
@@ -59,7 +57,7 @@ export default function UserRoadmaps() {
         <div className="bg-gray-100 p-4 flex justify-center mt-4">
           <button
             type="submit"
-            className="bg-[var(--text-brand)] text-[var(--text-white)] px-10 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
+            className="bg-color-brand text-text-negative px-10 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
           >
             Roadmap
           </button>

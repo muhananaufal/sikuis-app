@@ -9,10 +9,10 @@ export default function UserRoadmaps() {
       <div className="max-w-xl mx-auto p-6">
         <div className="font-semibold text-center mb-10">CONGRATULATIONS</div>
 
-        <div className="py-4 mb-4 text-[var(--text-secondary)] font-regular text-center">
+        <div className="py-4 mb-4 text-text-secondary font-regular text-center">
           A streak is born! Practice every day to help it grow
         </div>
-        <div className="flex justify-center text-[var(--text-brand)] mb-6">
+        <div className="flex justify-center text-color-brand mb-6">
           <Image
             src="/streak-fire.svg"
             alt="Google"
@@ -22,14 +22,14 @@ export default function UserRoadmaps() {
           />
         </div>
 
-        <h2 className="text-9xl font-semibold text-[var(--text-brand2)] text-center">
+        <h2 className="text-9xl font-semibold text-color-brand2 text-center">
           60
         </h2>
-        <h2 className="text-3xl font-semibold text-[var(--text-brand2)] text-center">
+        <h2 className="text-3xl font-semibold text-color-brand2 text-center">
           Day Streak
         </h2>
 
-        <div className="rounded-xl border-2 border-[var(--text-brand)] p-4 my-6 text-[var(--text-brand)]">
+        <div className="rounded-xl border-2 border-color-brand p-4 my-6 text-color-brand">
           <div className="grid grid-cols-7 gap-2 text-center">
             {["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"].map((day, index) => (
               <div
@@ -41,11 +41,11 @@ export default function UserRoadmaps() {
 
                 {/* Check Circle */}
                 <div
-                  className={`w-8 h-8 flex items-center justify-center rounded-full border-2 border-[var(--text-brand)] cursor-pointer transition
+                  className={`w-8 h-8 flex items-center justify-center rounded-full border-2 border-color-brand cursor-pointer transition
             ${
               index < 4
-                ? "bg-[var(--text-brand)] text-white"
-                : "bg-white text-[var(--text-brand)]"
+                ? "bg-color-brand text-white"
+                : "bg-white text-color-brand"
             }`}
                 >
                   <span className="material-icons-outlined text-xl">
@@ -60,7 +60,7 @@ export default function UserRoadmaps() {
         {/* START QUIZ BUTTON */}
         <button
           type="submit"
-          className="relative w-full bg-[var(--text-brand)] text-[var(--text-white)] p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
+          className="relative w-full bg-color-brand text-text-negative p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
         >
           NEXT
         </button>

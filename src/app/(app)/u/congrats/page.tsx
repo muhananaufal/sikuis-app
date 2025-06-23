@@ -8,7 +8,7 @@ export default function UserRoadmaps() {
       <div className="max-w-xl mx-auto p-6">
         <div className="font-semibold text-center mb-10">CONGRATULATIONS</div>
 
-        <h2 className="text-3xl font-semibold text-[var(--text-brand)] text-center">
+        <h2 className="text-3xl font-semibold text-color-brand text-center">
           Quiz Complete!
         </h2>
 
@@ -44,7 +44,7 @@ export default function UserRoadmaps() {
         {/* START QUIZ BUTTON */}
         <button
           type="submit"
-          className="relative w-full bg-[var(--text-brand)] text-[var(--text-white)] p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
+          className="relative w-full bg-color-brand text-text-negative p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
         >
           NEXT
         </button>

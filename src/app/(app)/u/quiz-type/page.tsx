@@ -10,7 +10,7 @@ export default function UserRoadmaps() {
     <MainLayout>
       <div className="max-w-xl mx-auto p-6">
         {/* Back + Progress */}
-        <div className="flex items-center pb-10 text-[var(--text-brand)] cursor-pointer w-full">
+        <div className="flex items-center pb-10 text-color-brand cursor-pointer w-full">
           {/* Logout Icon */}
           <button onClick={() => router.back()} className="cursor-pointer">
             <span
@@ -24,7 +24,7 @@ export default function UserRoadmaps() {
           {/* Progress Bar */}
           <div className="flex-1 h-4 bg-gray-300 rounded-full overflow-hidden">
             <div
-              className="h-full bg-[var(--text-brand)] transition-all duration-300"
+              className="h-full bg-color-brand transition-all duration-300"
               style={{ width: "65%" }}
             />
           </div>
@@ -39,7 +39,7 @@ export default function UserRoadmaps() {
             {["A", "B", "C", "D"].map((opt, i) => (
               <label
                 key={i}
-                className="flex items-center justify-center w-full border-2 rounded-xl cursor-pointer text-[var(--text-brand)] border-[var(--text-brand)] transition"
+                className="flex items-center justify-center w-full border-2 rounded-xl cursor-pointer text-color-brand border-color-brand transition"
               >
                 <input
                   type="radio"
@@ -47,7 +47,7 @@ export default function UserRoadmaps() {
                   value={opt}
                   className="peer hidden"
                 />
-                <span className="peer-checked:bg-[var(--text-brand2)] peer-checked:text-white flex-1 text-center  p-3 rounded-xl">
+                <span className="peer-checked:bg-color-brand2 peer-checked:text-white flex-1 text-center  p-3 rounded-xl">
                   {opt}
                 </span>
               </label>
@@ -56,7 +56,7 @@ export default function UserRoadmaps() {
 
           <button
             type="submit"
-            className="relative w-full bg-[var(--text-brand)] text-[var(--text-white)] p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
+            className="relative w-full bg-color-brand text-text-negative p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
           >
             SEND ANSWER
           </button>
@@ -75,7 +75,7 @@ export default function UserRoadmaps() {
             {["Yes", "No"].map((opt, i) => (
               <label
                 key={i}
-                className="flex-1 flex items-center justify-center border-2 rounded-xl cursor-pointer text-[var(--text-brand)] border-[var(--text-brand)] transition"
+                className="flex-1 flex items-center justify-center border-2 rounded-xl cursor-pointer text-color-brand border-color-brand transition"
               >
                 <input
                   type="radio"
@@ -83,7 +83,7 @@ export default function UserRoadmaps() {
                   value={opt}
                   className="peer hidden"
                 />
-                <span className="peer-checked:bg-[var(--text-brand2)] peer-checked:text-white flex-1 text-center rounded-xl p-3">
+                <span className="peer-checked:bg-color-brand2 peer-checked:text-white flex-1 text-center rounded-xl p-3">
                   {opt}
                 </span>
               </label>
@@ -92,7 +92,7 @@ export default function UserRoadmaps() {
 
           <button
             type="submit"
-            className="relative w-full bg-[var(--text-brand)] text-[var(--text-white)] p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
+            className="relative w-full bg-color-brand text-text-negative p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
           >
             SEND ANSWER
           </button>
@@ -108,14 +108,14 @@ export default function UserRoadmaps() {
           <p className="mb-4">Explain the theory of relativity in brief.</p>
 
           <textarea
-            className="w-full border-2 border-gray-300 rounded-xl p-3 mb-6 focus:outline-none focus:border-[var(--text-brand)]"
+            className="w-full border-2 border-gray-300 rounded-xl p-3 mb-6 focus:outline-none focus:border-color-brand"
             rows="5"
             placeholder="Type your answer here..."
           ></textarea>
 
           <button
             type="submit"
-            className="relative w-full bg-[var(--text-brand)] text-[var(--text-white)] p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
+            className="relative w-full bg-color-brand text-text-negative p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
           >
             SEND ANSWER
           </button>

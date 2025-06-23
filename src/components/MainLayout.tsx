@@ -13,7 +13,7 @@ export default function MainLayout({
   return (
     <div className="flex flex-col min-h-screen">
       {/* Top Bar */}
-      <header className="flex items-center justify-between text-[var(--text-brand)] p-4 border-b border-[var(--text-secondary)]">
+      <header className="flex items-center justify-between text-color-brand p-4 border-b border-text-secondary">
         <div className="flex items-center">
           <button
             className="lg:hidden flex items-center mr-4 cursor-pointer"
@@ -41,13 +41,13 @@ export default function MainLayout({
       <div className="flex flex-1">
         {/* Sidebar */}
         <aside
-          className={`fixed top-0 left-0 h-full w-[400px] bg-[var(--background)] z-40 transform lg:static lg:translate-x-0  ${
+          className={`fixed top-0 left-0 h-full w-[400px] bg-background z-40 transform lg:static lg:translate-x-0  ${
             sidebarOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
           {/* Close button */}
           <div className="flex items-center justify-between p-4 lg:hidden ">
-            <div className="text-xl font-bold text-[var(--text-brand)]">
+            <div className="text-xl font-bold text-color-brand">
               <i>SiKuis</i>
             </div>
             <button
@@ -65,7 +65,7 @@ export default function MainLayout({
               <li className="font-semibold">Generator</li>
               <li>
                 <a href="/roadmaps">
-                  <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
+                  <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
                     <span className="material-icons-outlined absolute left-4">
                       map
                     </span>
@@ -75,7 +75,7 @@ export default function MainLayout({
               </li>
               <li>
                 <a href="/quiz">
-                  <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
+                  <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="24px"
@@ -96,7 +96,7 @@ export default function MainLayout({
               <li className="font-semibold">General</li>
               <li>
                 <a href="#">
-                  <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
+                  <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
                     <span className="material-icons-outlined absolute left-4">
                       person
                     </span>
@@ -106,7 +106,7 @@ export default function MainLayout({
               </li>
               <li>
                 <a href="#">
-                  <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
+                  <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
                     <span className="material-icons-outlined absolute left-4">
                       map
                     </span>
@@ -116,7 +116,7 @@ export default function MainLayout({
               </li>
               <li>
                 <a href="#">
-                  <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
+                  <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="24px"
@@ -133,7 +133,7 @@ export default function MainLayout({
               </li>
               <li>
                 <a href="#">
-                  <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
+                  <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
                     <span className="material-icons-outlined absolute left-4">
                       settings
                     </span>
@@ -145,7 +145,7 @@ export default function MainLayout({
                 <form method="POST" action="/api/auth/signout">
                   <button
                     type="submit"
-                    className="relative w-full border-2 bg-[var(--text-brand)] text-[var(--text-white)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center"
+                    className="relative w-full border-2 bg-color-brand text-text-negative p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center"
                   >
                     <span className="material-icons-outlined absolute left-4">
                       logout

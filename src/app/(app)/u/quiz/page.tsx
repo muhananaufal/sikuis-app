@@ -11,7 +11,7 @@ export default function UserRoadmaps() {
       <div className="max-w-xl mx-auto p-6">
         <button
           onClick={() => router.back()}
-          className="flex items-center pb-10 text-[var(--text-primary)] cursor-pointer"
+          className="flex items-center pb-10 text-text-primary cursor-pointer"
         >
           <span
             className="material-icons-outlined m-0 mr-4"
@@ -22,17 +22,15 @@ export default function UserRoadmaps() {
           <span className="font-semibold">Back</span>
         </button>
 
-        <h2 className="text-3xl font-semibold text-[var(--text-primary)]">
+        <h2 className="text-3xl font-semibold text-text-primary">
           Piano Mastery
         </h2>
-        <div className="py-4 text-[var(--text-secondary)] font-regular">
-          Description
-        </div>
+        <div className="py-4 text-text-secondary font-regular">Description</div>
 
         <div className="flex gap-2">
           <button
             type="submit"
-            className="bg-[var(--text-brand2)] text-[var(--text-white)] px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
+            className="bg-color-brand2 text-text-negative px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
           >
             <span
               className="material-icons-outlined m-0 mr-2"
@@ -44,7 +42,7 @@ export default function UserRoadmaps() {
           </button>
           <button
             type="submit"
-            className="bg-[var(--text-brand2)] text-[var(--text-white)] px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
+            className="bg-color-brand2 text-text-negative px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
           >
             <span
               className="material-icons-outlined m-0 mr-2"
@@ -59,13 +57,13 @@ export default function UserRoadmaps() {
         <div className="bg-gray-100 p-4 flex justify-center gap-2 mt-4">
           <button
             type="submit"
-            className="bg-transparent text-[var(--text-brand)] px-10 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
+            className="bg-transparent text-color-brand px-10 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
           >
             Roadmap
           </button>
           <button
             type="submit"
-            className="bg-[var(--text-brand)] text-[var(--text-white)] px-10 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
+            className="bg-color-brand text-text-negative px-10 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
           >
             Quiz
           </button>
@@ -76,22 +74,22 @@ export default function UserRoadmaps() {
           <li className="font-semibold mb-4">Quizez</li>
           <li>
             <a href="#">
-              <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex">
+              <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex">
                 <div>
                   <span className="material-icons-outlined">map</span>
                 </div>
                 <div className="w-full ml-4 text-left">
                   <h2>Piano Mastery Quiz #1</h2>
-                  <p className="text-[var(--text-secondary)] font-normal">
+                  <p className="text-text-secondary font-normal">
                     3 Question • Easy
                   </p>
-                  <p className="text-[var(--text-secondary)] font-normal">
+                  <p className="text-text-secondary font-normal">
                     Multiple Choices, Yes-No, Open Question
                   </p>
                 </div>
 
                 {/* Top-right kebab menu */}
-                <div className="text-[var(--text-brand)] text-2xl leading-none">
+                <div className="text-color-brand text-2xl leading-none">
                   <span className="material-icons">more_vert</span>
                 </div>
               </button>
@@ -99,7 +97,7 @@ export default function UserRoadmaps() {
           </li>
           <li>
             <a href="#">
-              <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex">
+              <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -114,16 +112,16 @@ export default function UserRoadmaps() {
                 </div>
                 <div className="w-full ml-4 text-left">
                   <h2>Piano Mastery Quiz #1</h2>
-                  <p className="text-[var(--text-secondary)] font-normal">
+                  <p className="text-text-secondary font-normal">
                     3 Question • Easy
                   </p>
-                  <p className="text-[var(--text-secondary)] font-normal">
+                  <p className="text-text-secondary font-normal">
                     Multiple Choices, Yes-No, Open Question
                   </p>
                 </div>
 
                 {/* Top-right kebab menu */}
-                <div className="text-[var(--text-brand)] text-2xl leading-none">
+                <div className="text-color-brand text-2xl leading-none">
                   <span className="material-icons">more_vert</span>
                 </div>
               </button>
@@ -159,7 +157,7 @@ export default function UserRoadmaps() {
                     value={level.toLowerCase()}
                     className="peer hidden"
                   />
-                  <div className="w-full text-center border-2 border-[var(--text-brand)] p-3 rounded-lg font-semibold text-[var(--text-brand)] peer-checked:bg-[var(--text-brand)] peer-checked:text-[var(--text-white)] transition">
+                  <div className="w-full text-center border-2 border-color-brand p-3 rounded-lg font-semibold text-color-brand peer-checked:bg-color-brand peer-checked:text-text-negative transition">
                     {level}
                   </div>
                 </label>
@@ -180,7 +178,7 @@ export default function UserRoadmaps() {
                       value={type}
                       className="peer hidden"
                     />
-                    <div className="px-4 py-2 border-2 border-[var(--text-brand)] rounded-lg font-semibold text-[var(--text-brand)] peer-checked:bg-[var(--text-brand)] peer-checked:text-[var(--text-white)] transition">
+                    <div className="px-4 py-2 border-2 border-color-brand rounded-lg font-semibold text-color-brand peer-checked:bg-color-brand peer-checked:text-text-negative transition">
                       {type}
                     </div>
                   </label>
@@ -192,7 +190,7 @@ export default function UserRoadmaps() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="relative w-full bg-[var(--text-brand)] text-[var(--text-white)] p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
+            className="relative w-full bg-color-brand text-text-negative p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
           >
             <span className="material-icons absolute left-4">add_circle</span>
             Generate Quiz

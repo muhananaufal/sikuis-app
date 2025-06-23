@@ -1,33 +1,45 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --text-white: #ffffff;
-  --text-brand: #ff595b;
-  --text-brand2: #ff9059;
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --color-brand: #ad46ff;
+  --color-brand2: #b871f1;
   --text-primary: #4c3f65;
   --text-secondary: #898989;
+  --text-negative: #ffffff;
   /* --text-accent: #2563eb; */
   /* --text-danger: #dc2626; */
 }
 
+/* add .dark to html for darkmodes */
+.dark {
+  --color-background: #171717;
+  --color-foreground: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #898989;
+  --text-negative: #171717;
+}
+
+/* Tailwind v4 --color-brand is can be called bg-brand, text-brand, etc */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-color-background: var(--color-background);
+  --color-color-foreground: var(--color-foreground);
+  --color-color-brand: var(--color-brand);
+  --color-color-brand2: var(--color-brand2);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-negative: var(--text-negative);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
+html {
+  transition: all 0.3s ease;
+}
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-background);
+  color: var(--color-foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

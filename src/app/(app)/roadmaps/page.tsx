@@ -14,10 +14,10 @@ export default function GenerateRoadmaps() {
   return (
     <MainLayout>
       <form onSubmit={handleSubmit} className="max-w-xl mx-auto mt-10 p-6">
-        <h2 className="text-3xl font-semibold text-[var(--text-brand)] text-center">
+        <h2 className="text-3xl font-semibold text-color-brand text-center">
           Generate Roadmaps with AI
         </h2>
-        <div className="p-4 text-[var(--text-secondary)] font-regular text-center">
+        <div className="p-4 text-text-secondary font-regular text-center">
           Enter a topic and let the AI generate a roadmap for you
         </div>
 
@@ -28,13 +28,13 @@ export default function GenerateRoadmaps() {
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
           required
-          className="w-full border-2 border-[var(--text-secondary)] px-4 py-4 text-[var(--text-primary)] focus:outline-none rounded-xl text-center"
+          className="w-full border-2 border-text-secondary px-4 py-4 text-text-primary focus:outline-none rounded-xl text-center"
         />
 
         {/* GENERATE BUTTON */}
         <button
           type="submit"
-          className="w-full bg-[var(--text-brand)] text-[var(--text-white)] mt-6 p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer"
+          className="w-full bg-color-brand text-text-negative mt-6 p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer"
         >
           GENERATE
         </button>
@@ -42,7 +42,7 @@ export default function GenerateRoadmaps() {
         <div className="flex gap-2">
           <button
             type="submit"
-            className="bg-[var(--text-brand2)] text-[var(--text-white)] mt-6 px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
+            className="bg-color-brand2 text-text-negative mt-6 px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
           >
             <span
               className="material-icons-outlined m-0"
@@ -53,7 +53,7 @@ export default function GenerateRoadmaps() {
           </button>
           <button
             type="submit"
-            className="bg-[var(--text-brand2)] text-[var(--text-white)] mt-6 px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
+            className="bg-color-brand2 text-text-negative mt-6 px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
           >
             <span
               className="material-icons-outlined m-0"
@@ -64,7 +64,7 @@ export default function GenerateRoadmaps() {
           </button>
           <button
             type="submit"
-            className="bg-[var(--text-brand2)] text-[var(--text-white)] mt-6 px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
+            className="bg-color-brand2 text-text-negative mt-6 px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
           >
             <span
               className="material-icons-outlined m-0"

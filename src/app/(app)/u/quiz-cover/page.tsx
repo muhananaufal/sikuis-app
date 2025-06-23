@@ -11,7 +11,7 @@ export default function UserRoadmaps() {
       <div className="max-w-xl mx-auto p-6">
         <button
           onClick={() => router.back()}
-          className="flex items-center pb-10 text-[var(--text-primary)] cursor-pointer"
+          className="flex items-center pb-10 text-text-primary cursor-pointer"
         >
           <span
             className="material-icons-outlined m-0 mr-4"
@@ -22,7 +22,7 @@ export default function UserRoadmaps() {
           <span className="font-semibold">Back</span>
         </button>
 
-        <div className="flex justify-center text-[var(--text-brand)] mb-6">
+        <div className="flex justify-center text-color-brand mb-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 -960 960 960"
@@ -35,20 +35,20 @@ export default function UserRoadmaps() {
           </svg>
         </div>
 
-        <h2 className="text-3xl font-semibold text-[var(--text-brand)] text-center">
+        <h2 className="text-3xl font-semibold text-color-brand text-center">
           Piano Mastery
         </h2>
-        <div className="py-4 text-[var(--text-secondary)] font-regular text-center">
+        <div className="py-4 text-text-secondary font-regular text-center">
           3 Question • Easy
         </div>
-        <div className="pb-4 text-[var(--text-secondary)] font-regular text-center">
+        <div className="pb-4 text-text-secondary font-regular text-center">
           Multiple Choices, Yes-No, Open Question
         </div>
 
         {/* START QUIZ BUTTON */}
         <button
           type="submit"
-          className="relative w-full bg-[var(--text-brand)] text-[var(--text-white)] p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
+          className="relative w-full bg-color-brand text-text-negative p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex items-center justify-center"
         >
           START
         </button>
@@ -58,7 +58,7 @@ export default function UserRoadmaps() {
           <li className="font-semibold mb-4">Past Attemps</li>
           <li>
             <a href="#">
-              <button className="relative w-full bg-transparent border-2 text-[var(--text-brand)] p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex">
+              <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -73,16 +73,16 @@ export default function UserRoadmaps() {
                 </div>
                 <div className="w-full ml-4 text-left">
                   <h2>Piano Mastery Quiz #1</h2>
-                  <p className="text-[var(--text-secondary)] font-normal">
+                  <p className="text-text-secondary font-normal">
                     3 Question • Easy
                   </p>
-                  <p className="text-[var(--text-secondary)] font-normal">
+                  <p className="text-text-secondary font-normal">
                     Multiple Choices, Yes-No, Open Question
                   </p>
                 </div>
 
                 {/* Top-right kebab menu */}
-                <div className="text-[var(--text-brand)] text-2xl leading-none">
+                <div className="text-color-brand text-2xl leading-none">
                   <span className="material-icons">more_vert</span>
                 </div>
               </button>
