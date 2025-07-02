@@ -3,7 +3,7 @@ import { NextResponse, type NextRequest } from 'next/server'
 
 const authRoutes = ["/signin", "/signup"]
 
-export async function updateSession(request: NextRequest) {
+export async function updateSessionAndGuardRoutes(request: NextRequest) {
   let supabaseResponse = NextResponse.next({
     request,
   })
