@@ -1,14 +1,78 @@
 "use client";
 
 import MainLayout from "@/components/MainLayout";
-import { useState } from "react";
+import TreeRoadmap, { RoadmapItem } from "@/components/TreeRoadmap";
+import { getAIRoadmap } from "@/lib/getAIRoadmap";
+import { useEffect, useState } from "react";
+
+import domtoimage from "dom-to-image";
 
 export default function GenerateRoadmaps() {
+  const [roadmaps, setRoadmaps] = useState<RoadmapItem[]>([]);
+  const [loading, setLoading] = useState(false);
+
   const [topic, setTopic] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  useEffect(() => {
+    fetch("/roadmaps.json")
+      .then((res) => res.json())
+      .then(setRoadmaps)
+      .catch((err) => console.error("Failed to load roadmaps.json:", err));
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you'd call your API
+
+    if (!topic.trim()) return;
+    setLoading(true);
+    const result = await getAIRoadmap(topic);
+    if (result) setRoadmaps(result);
+    setLoading(false);
+  };
+
+  const handleDownload = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const node = document.getElementById("downloadableElement");
+
+    if (!node) return;
+
+    domtoimage.toPng(node).then((dataUrl) => {
+      const link = document.createElement("a");
+      link.download = "downloaded-picture.png";
+      link.href = dataUrl;
+      link.click();
+    });
+  };
+
+  const handleSave = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!topic.trim() || roadmaps.length === 0) {
+      alert("Please generate a roadmap first.");
+      return;
+    }
+
+    const res = await fetch("/api/roadmaps", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        title: topic,
+        steps: roadmaps,
+      }),
+    });
+
+    if (!res.ok) {
+      console.error("Failed to save roadmap");
+      alert("Failed to save roadmap.");
+      return;
+    }
+
+    const data = await res.json();
+    console.log("Roadmap saved ✅", data);
+    alert("Roadmap saved!");
   };
 
   return (
@@ -34,14 +98,16 @@ export default function GenerateRoadmaps() {
         {/* GENERATE BUTTON */}
         <button
           type="submit"
+          id="downloadableElemen"
           className="w-full bg-color-brand text-text-negative mt-6 p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer"
+          disabled={loading}
         >
-          GENERATE
+          {loading ? "Generating..." : "Generate"}
         </button>
 
         <div className="flex gap-2">
           <button
-            type="submit"
+            onClick={handleDownload}
             className="bg-color-brand2 text-text-negative mt-6 px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
           >
             <span
@@ -51,10 +117,7 @@ export default function GenerateRoadmaps() {
               file_download
             </span>
           </button>
-          <button
-            type="submit"
-            className="bg-color-brand2 text-text-negative mt-6 px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
-          >
+          <button className="bg-color-brand2 text-text-negative mt-6 px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex">
             <span
               className="material-icons-outlined m-0"
               style={{ fontSize: "1.5rem" }}
@@ -63,7 +126,7 @@ export default function GenerateRoadmaps() {
             </span>
           </button>
           <button
-            type="submit"
+            onClick={handleSave}
             className="bg-color-brand2 text-text-negative mt-6 px-4 py-2 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex"
           >
             <span
@@ -75,6 +138,10 @@ export default function GenerateRoadmaps() {
           </button>
         </div>
       </form>
+
+      {roadmaps && roadmaps.length > 0 && (
+        <TreeRoadmap RoadmapData={roadmaps} />
+      )}
     </MainLayout>
   );
 }

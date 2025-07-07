@@ -1,63 +1,183 @@
 [
   {
-    "title": "Root 1",
-    "description": "Simple description",
+    "id": "intro",
+    "title": "Introduction to World War I",
+    "description": "Understand the basic timeline, the major powers involved (Allies and Central Powers), and the global context leading up to the war. This foundational topic covers the geopolitical landscape of early 20th century Europe, the complex web of alliances that would drag nations into conflict, and the key players who would shape the course of history.",
     "children": [
       {
-        "title": "Child 1",
-        "description": "Simple description",
-        "children": [
-          {
-            "title": "Child 1.1",
-            "description": "Simple description",
-            "children": []
-          },
-          {
-            "title": "Child 1.2",
-            "description": "Simple description",
-            "children": []
-          },
-          {
-            "title": "Child 1.2",
-            "description": "Simple description",
-            "children": []
-          }
-        ]
+        "id": "geo-landscape",
+        "title": "Geopolitical Landscape Pre-1914",
+        "description": "Examine the political map of Europe and the world before the war. Study the major empires, emerging nation-states, and the delicate balance of power that existed before 1914.",
+        "children": []
       },
       {
-        "title": "Child 2",
-        "description": "Simple description",
-        "children": [
-          {
-            "title": "Child 2.1",
-            "description": "Simple description",
-            "children": []
-          },
-          {
-            "title": "Child 2.2",
-            "description": "Simple description",
-            "children": []
-          },
-          {
-            "title": "Child 2.2",
-            "description": "Simple description",
-            "children": []
-          }
-        ]
+        "id": "alliances",
+        "title": "Key Nations and Alliances",
+        "description": "Identify the Triple Entente (Britain, France, Russia) and Triple Alliance (Germany, Austria-Hungary, Italy) members and their complex relationships that would determine the sides in the coming conflict.",
+        "children": []
       }
     ]
   },
   {
-    "title": "Root 2",
+    "id": "causes",
+    "title": "Causes of World War I",
+    "description": "Delve into the underlying causes using the MAIN framework: Militarism, Alliances, Imperialism, and Nationalism. Explore how these long-term factors created a powder keg in Europe, and learn about the immediate trigger - the assassination of Archduke Franz Ferdinand in Sarajevo.",
     "children": [
       {
-        "title": "Child 1",
-        "children": [
-          {
-            "title": "Child 1.1",
-            "children": []
-          }
-        ]
+        "id": "militarism",
+        "title": "Militarism and Arms Race",
+        "description": "Study the unprecedented build-up of military power and naval competition, particularly between Britain and Germany. Examine how the arms race created tension and made war more likely.",
+        "children": []
+      },
+      {
+        "id": "alliance-system",
+        "title": "Complex Alliance System",
+        "description": "Analyze how interlocking treaties and secret agreements created a domino effect that turned a regional conflict into a world war.",
+        "children": []
+      },
+      {
+        "id": "imperialism",
+        "title": "Imperialism and Colonial Rivalries",
+        "description": "Explore the competition for colonies and resources, particularly in Africa and Asia, and how imperial tensions contributed to European rivalries.",
+        "children": []
+      },
+      {
+        "id": "nationalism",
+        "title": "Nationalism and Ethnic Tensions",
+        "description": "Understand the role of nationalistic fervor and ethnic conflicts, particularly in the volatile Balkans region where Slavic nationalism challenged Austrian rule.",
+        "children": []
+      },
+      {
+        "id": "assassination",
+        "title": "Assassination in Sarajevo",
+        "description": "Learn about the pivotal event of June 28, 1914, when Archduke Franz Ferdinand was assassinated by Gavrilo Princip, and how the July Crisis escalated into global war.",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "western-front",
+    "title": "The Western Front",
+    "description": "Examine the initial movements, the failure of quick victory plans, and the brutal reality of trench warfare that defined the Western Front. This theater became synonymous with the horrors of modern industrial warfare.",
+    "children": [
+      {
+        "id": "schlieffen-plan",
+        "title": "Schlieffen Plan and Early Battles",
+        "description": "Understand Germany's initial strategy to quickly defeat France through Belgium, and how the Battle of the Marne stopped the German advance and led to the 'Race to the Sea.'",
+        "children": []
+      },
+      {
+        "id": "trench-life",
+        "title": "Life in the Trenches",
+        "description": "Explore the daily conditions, psychological impact, and immense challenges faced by soldiers living in the elaborate trench systems that stretched from the North Sea to Switzerland.",
+        "children": []
+      },
+      {
+        "id": "major-battles",
+        "title": "Major Battles",
+        "description": "Study the objectives, tactics, and immense casualties of iconic battles like Verdun (1916), the Somme (1916), and Passchendaele (1917) that epitomized the futility of trench warfare.",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "other-fronts",
+    "title": "Other Theaters of War",
+    "description": "Explore the war's progression outside the Western Front, including the Eastern Front's mobile warfare, the disastrous Gallipoli campaign, and conflicts across the globe from Africa to the Middle East.",
+    "children": [
+      {
+        "id": "eastern-front",
+        "title": "War on the Eastern Front",
+        "description": "Understand the vast scale and different nature of fighting between Germany/Austria-Hungary and Russia, characterized by greater mobility and devastating casualties.",
+        "children": []
+      },
+      {
+        "id": "gallipoli",
+        "title": "Gallipoli Campaign",
+        "description": "Learn about the Allied attempt to open a new front against the Ottoman Empire, resulting in one of the war's most costly failures and a defining moment for Australia and New Zealand.",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "technology",
+    "title": "New Technologies",
+    "description": "Investigate the innovations that transformed warfare forever, from the first tanks to poison gas, aircraft, and submarines. World War I marked the transition from 19th-century warfare to modern industrial combat.",
+    "children": [
+      {
+        "id": "tanks",
+        "title": "Tanks and Armored Warfare",
+        "description": "Trace the development of the first tanks, from the British Mark I to their eventual role in breaking the stalemate of trench warfare.",
+        "children": []
+      },
+      {
+        "id": "chemical-weapons",
+        "title": "Chemical Weapons",
+        "description": "Understand the horrific introduction and use of poison gas, from chlorine to mustard gas, and its devastating psychological and physical effects on soldiers.",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "home-front",
+    "title": "Life on the Home Front",
+    "description": "Understand how the war transformed civilian life, economies, and societies. Total war meant that entire populations were mobilized for the war effort, changing social structures forever.",
+    "children": [
+      {
+        "id": "propaganda",
+        "title": "Propaganda and Censorship",
+        "description": "Examine how governments used sophisticated propaganda campaigns to maintain morale and support for the war, while censoring negative news from the front.",
+        "children": []
+      },
+      {
+        "id": "womens-roles",
+        "title": "Women's Changing Roles",
+        "description": "Explore how women entered the workforce in unprecedented numbers, taking on roles previously reserved for men, and how this contributed to the suffrage movement.",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "end-war",
+    "title": "The End of the War",
+    "description": "Analyze the factors that led to the collapse of the Central Powers and the armistice. From the Russian Revolution to American entry, multiple factors combined to tip the balance decisively.",
+    "children": [
+      {
+        "id": "russian-revolution",
+        "title": "Russian Revolution",
+        "description": "Understand how internal turmoil and revolution led Russia to sign a separate peace with Germany, freeing up German troops for the Western Front.",
+        "children": []
+      },
+      {
+        "id": "us-entry",
+        "title": "US Entry into the War",
+        "description": "Examine the reasons for American involvement, from unrestricted submarine warfare to the Zimmermann Telegram, and the decisive impact of fresh American troops.",
+        "children": []
+      },
+      {
+        "id": "armistice",
+        "title": "Armistice",
+        "description": "Learn about the signing of the armistice on November 11, 1918, at 11 AM - the 'eleventh hour of the eleventh day of the eleventh month.'",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "peace-settlement",
+    "title": "Peace Settlement",
+    "description": "Examine the peace treaties, particularly Versailles, and their long-term consequences. The peace settlement would reshape the map of Europe and plant the seeds of future conflict.",
+    "children": [
+      {
+        "id": "versailles",
+        "title": "Treaty of Versailles",
+        "description": "Study the harsh terms imposed on Germany, including territorial losses, military restrictions, war guilt clause, and massive reparations that would burden Germany for decades.",
+        "children": []
+      },
+      {
+        "id": "league-nations",
+        "title": "League of Nations",
+        "description": "Understand the creation of the first international peacekeeping organization, its noble goals, and the fatal weaknesses that would limit its effectiveness.",
+        "children": []
       }
     ]
   }

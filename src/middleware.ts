@@ -4,7 +4,7 @@ import { updateSessionAndGuardRoutes } from '@/lib/supabase/middleware'
 export async function middleware(request: NextRequest) {
   console.log('✅ MIDDLEWARE FIRED!', request.nextUrl.pathname)
   // update user's auth session
-  // return await updateSessionAndGuardRoutes(request)
+  return await updateSessionAndGuardRoutes(request)
 }
 
 export const config = {
