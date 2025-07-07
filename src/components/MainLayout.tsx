@@ -95,39 +95,12 @@ export default function MainLayout({
             <ul className="space-y-2 mt-2">
               <li className="font-semibold">General</li>
               <li>
-                <a href="#">
+                <a href="/u">
                   <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
                     <span className="material-icons-outlined absolute left-4">
                       person
                     </span>
                     Account
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
-                    <span className="material-icons-outlined absolute left-4">
-                      map
-                    </span>
-                    Roadmap
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <button className="relative w-full bg-transparent border-2 text-color-brand p-3 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer flex justify-center items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="currentColor"
-                      className="absolute left-4 object-contain"
-                    >
-                      <path d="M400-160h160v-160H400v160ZM160-400h160v-160H160v160Zm240 0h160v-160H400v160Zm240 0h160v-160H640v160Zm0-240h160v-160H640v160ZM320-80v-240H80v-320h480v-240h320v560H640v240H320Z" />
-                    </svg>
-                    Quiz
                   </button>
                 </a>
               </li>

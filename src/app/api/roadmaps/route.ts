@@ -10,12 +10,15 @@ export async function GET() {
     error: userError,
   } = await supabase.auth.getUser();
 
-  if (userError) console.error("❌ getUser error:", userError.message);
+  if (userError) {
+    console.error("❌ getUser error:", userError.message);
+    return Response.json({ error: "Unauthorized" }, { status: 401 });
+  }
   
   const { data: roadmaps, error } = await supabase
   .from("roadmaps")
   .select("id, title, data, created_at")
-  .eq("user_id", user?.id) // in case user is null
+  .eq("user_id", user?.id)
   .order("created_at", { ascending: false });
   
   if (error) {

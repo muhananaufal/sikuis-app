@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { login } from "../actions";
+import { signin } from "../actions";
 
 export default function SignIn() {
   const [email, setEmail] = useState("");
@@ -77,7 +77,7 @@ export default function SignIn() {
 
       {/* SIGN IN/SIGN UP BUTTON */}
       <button
-        formAction={login}
+        formAction={signin}
         className="w-full bg-color-brand text-text-negative mt-6 p-4 font-semibold rounded-xl hover:brightness-90 transition cursor-pointer"
       >
         SIGN IN

@@ -13,12 +13,12 @@ export default function GenerateRoadmaps() {
 
   const [topic, setTopic] = useState("");
 
-  useEffect(() => {
-    fetch("/roadmaps.json")
-      .then((res) => res.json())
-      .then(setRoadmaps)
-      .catch((err) => console.error("Failed to load roadmaps.json:", err));
-  }, []);
+  // useEffect(() => {
+  //   fetch("/roadmaps.json")
+  //     .then((res) => res.json())
+  //     .then(setRoadmaps)
+  //     .catch((err) => console.error("Failed to load roadmaps.json:", err));
+  // }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

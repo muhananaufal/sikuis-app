@@ -3,10 +3,11 @@
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
 
-import { createClient } from '@/lib/supabase/server'
+import { createClientServer } from '@/lib/supabase/server'
+import { showToast } from '@/lib/Toast'
 
-export async function login(formData: FormData) {
-  const supabase = await createClient()
+export async function signin(formData: FormData) {
+  const supabase = await createClientServer()
 
   // type-casting here for convenience
   // in practice, you should validate your inputs
@@ -18,8 +19,8 @@ export async function login(formData: FormData) {
   const { error } = await supabase.auth.signInWithPassword(data)
 
   if (error) {
-    console.log("❌ Sign In Error")
-    redirect('/error')
+    console.log("❌ Sign In Error", error)
+    return
   }
 
   console.log("✅ Sign In Success")
@@ -28,7 +29,7 @@ export async function login(formData: FormData) {
 }
 
 export async function signup(formData: FormData) {
-  const supabase = await createClient()
+  const supabase = await createClientServer()
 
   // type-casting here for convenience
   // in practice, you should validate your inputs
@@ -40,8 +41,8 @@ export async function signup(formData: FormData) {
   const { error } = await supabase.auth.signUp(data)
 
   if (error) {
-    console.log("❌ Sign Up Error")
-    redirect('/error')
+    console.log("❌ Sign Up Error", error)
+    return
   }
 
   console.log("✅ Sign Up Success")
