@@ -33,7 +33,7 @@ export async function signin(prevState: ActionResult, formData: FormData): Promi
   console.log("✅ Sign In Success");
   // Redirect hanya jika berhasil. RevalidatePath tidak terlalu dibutuhkan di sini
   // karena middleware akan menangani sesi.
-  redirect('/u/roadmaps');
+  redirect('/roadmaps');
   
   // Return ini tidak akan pernah tercapai karena redirect, tapi dibutuhkan untuk tipe TypeScript
   return { error: null };
