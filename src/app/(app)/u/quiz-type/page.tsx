@@ -109,7 +109,7 @@ export default function UserRoadmaps() {
 
           <textarea
             className="w-full border-2 border-gray-300 rounded-xl p-3 mb-6 focus:outline-none focus:border-color-brand"
-            rows="5"
+            rows={5}
             placeholder="Type your answer here..."
           ></textarea>
 

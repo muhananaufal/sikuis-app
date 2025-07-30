@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import type { QuizData, Question } from '@/app/(app)/u/quiz-type/[quizId]/page';
 import { useQuizResultStore } from '@/store/quizResultStore';

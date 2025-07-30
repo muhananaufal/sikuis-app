@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 // pages/index.tsx
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);

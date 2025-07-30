@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { create } from 'zustand';
 import type { QuizData } from '@/app/(app)/u/quiz-type/[quizId]/page';
 
