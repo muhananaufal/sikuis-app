@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { useActionState } from 'react';
 import { signup, ActionResult } from './actions';
 
@@ -62,14 +62,14 @@ export default function SignUp() {
 			<div className="mt-4 text-text-secondary font-semibold text-center">OR</div>
 
 			{/* Tombol Sign Up with Google */}
-			<button
+			{/* <button
 				type="button" // Ganti ke "button" agar tidak men-submit form utama
 				// onClick={handleGoogleSignUp} // Anda akan butuh fungsi terpisah untuk ini
 				className="relative w-full bg-transparent border-3 text-color-brand mt-6 p-4 font-semibold rounded-xl hover:bg-color-brand hover:text-text-negative transition cursor-pointer flex justify-center items-center"
 			>
 				<Image src="/google.svg" alt="Google" width={24} height={24} className="absolute left-5 object-contain" />
 				Sign Up with Google
-			</button>
+			</button> */}
 
 			{/* Terms and Policy */}
 			<div className="mt-4 p-4 text-text-secondary font-regular text-center">

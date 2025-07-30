@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link"; // Gunakan Link untuk navigasi internal
 import { signin } from "../actions";
 
@@ -73,7 +73,7 @@ export default function SignIn() {
       </div>
 
       {/* BUG FIX: Tombol Google harusnya memicu flow OAuth, bukan submit form ini */}
-      <button
+      {/* <button
         type="button" // Ubah ke "button" agar tidak submit form utama
         // onClick={handleGoogleSignIn} // Anda perlu membuat fungsi ini
         className="relative w-full bg-transparent border-3 text-color-brand mt-6 p-4 font-semibold rounded-xl hover:bg-color-brand hover:text-text-negative transition cursor-pointer flex justify-center items-center"
@@ -86,7 +86,7 @@ export default function SignIn() {
           className="absolute left-5 object-contain"
         />
         Sign In with Google
-      </button>
+      </button> */}
 
       {/* ... sisa kode ... */}
     </form>
