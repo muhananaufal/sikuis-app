@@ -68,9 +68,9 @@ export default function SignIn() {
         <Link href="/signup">DON&apos;T HAVE AN ACCOUNT?</Link>
       </div>
 
-      <div className="mt-4 text-text-secondary font-semibold text-center">
+      {/* <div className="mt-4 text-text-secondary font-semibold text-center">
         OR
-      </div>
+      </div> */}
 
       {/* BUG FIX: Tombol Google harusnya memicu flow OAuth, bukan submit form ini */}
       {/* <button

@@ -59,7 +59,7 @@ export default function SignUp() {
 				<a href="/signin">ALREADY HAVE AN ACCOUNT?</a>
 			</div>
 
-			<div className="mt-4 text-text-secondary font-semibold text-center">OR</div>
+			{/* <div className="mt-4 text-text-secondary font-semibold text-center">OR</div> */}
 
 			{/* Tombol Sign Up with Google */}
 			{/* <button
